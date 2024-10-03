@@ -13,10 +13,11 @@ se ímpar, deve ser alocado e armazenado.
 void alocaInt(int **p, int tam);
 void leituraInt(int *p, int tam);
 void mostra(int *p, int tam);
+void alocaImpar(int *nums, int q_nums);
 
 int main()
 {
-    int q_nums = 0, *nums = NULL;
+    int q_nums = 0, *nums = NULL, *numImp = NULL, qtdImp = 0;
     char op;
     do{
         alocaInt(&nums, q_nums + 1);
@@ -51,4 +52,12 @@ void mostra(int *p, int tam)
     {
      printf("\nNumero: %i", *p);
     }
+}
+void alocaImpar(int *nums, int q_nums)
+{
+for (int i = 0; i < q_nums; i++)
+{
+    /* code */
+}
+
 }
